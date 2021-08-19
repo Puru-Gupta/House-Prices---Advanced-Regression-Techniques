@@ -19,7 +19,7 @@ Here's a brief version of what you'll find in the data description file.
 * LotConfig: Lot configuration
 
 Get Detail about all Variable Here
-https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
+[here](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
 
 # Competition Description
 Ask a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the proximity to an east-west railroad. But this playground competition's dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence.
@@ -46,10 +46,31 @@ Boruta iteratively removes features that are statistically less relevant than a 
 # ScatterPlot between Actual and Predicted SalePrice from Train Dataset
 ![actu_pre](https://user-images.githubusercontent.com/55012359/130116704-d4da0a58-9aa7-4198-b874-3b6b62395f41.png)
 
-#Error Distribution (Hyperparameter tunning)
+# Error Distribution (Hyperparameter tunning)
 
 ![error_hist](https://user-images.githubusercontent.com/55012359/130117187-9d80de60-1f79-4893-a3a3-24f163e97395.png)
 
+## 3. Modelling and Evaluation
 
-# Acknowledgments
-The Ames Housing dataset was compiled by Dean De Cock for use in data science education. It's an incredible alternative for data scientists looking for a modernized and expanded version of the often cited Boston Housing dataset. 
+* Algorithms used
+  * Random Forest
+  * bagging
+  * Gradient Boost Method
+
+
+* Metric - Since the target variable is a continuous variable, regression evaluation metric RMSE (Root Mean Squared Error) and R2 Score (Coefficient of Determination) have been used.
+## Data Modelling
+A total of 2 different models were used for prediction cross validation were the primary metrics used for evaluating the models. 
+
+#Model,	R2
+
+- RandomForest:	0.82145
+- bagging : 0.81112
+- Gradient Boosting Regressor:	0.88524
+- Based on cross-validation R2, it can be observed that the Gradient Boosting Regressor model have the highest variability Explained.
+
+
+## Licensing, Authors, Acknowledgements<a name="licensing"></a>
+
+Credited to Kaggle for availability of the data. You can find the License for the data and other descriptive information in the Kaggle available [here](https://www.kaggle.com/nikhilmittal/flight-fare-prediction-mh). Otherwise, feel free to use the code here as you would like! 
+
