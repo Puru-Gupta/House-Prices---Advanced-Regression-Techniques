@@ -36,7 +36,7 @@ Advanced regression techniques like random forest and gradient boosting
 
 # Boruta Algorithm for Features Selection
 Boruta iteratively removes features that are statistically less relevant than a random probe (artificial noise variables introduced by the Boruta algorithm). In each iteration, rejected variables are removed from consideration in the next iteration. It generally ends up with a good global optimization for feature selection which is why I like it.
-# NonRejected Varible(Green), Rejected Varible(Yellow)
+# NonRejected Varible(Green)
 
 ![Boruta_feature_sel](https://user-images.githubusercontent.com/55012359/130115860-c37787aa-af5a-495f-8f4f-6e582c2d551b.png)
 
